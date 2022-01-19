@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+h3 {
+  z-index: 1;
+  color: #FBEAFF;
+  font-size: 15px;
+}
+
+h5 {
+  font-size: 13px;
+}
+
+h6 {
+  font-weight: normal;
+  font-size: 11px;
+}
+
+h3, p, h5, h6 {
+  line-height: 20px;
+  letter-spacing: normal;
+}
+
+p {
+  font-size: 14px;
+  color: #C4CCDF;
+  font-weight: 400;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.title:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.title .img {
+  margin-right: 5%;
+}
+
+.title .img img {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #A775F2;
+}
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 35px;
+  padding-top: 35px;
+  grid-gap: 10px;
+  margin: 10px;
+  border-radius: 7px;
+}
+
+.grid .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid .title .img {
+  margin-right: 20px;
+  width: 45px;
+  height: 45px;
+}
+
+.grids {
+  background-color: #EEF3FA;
+  padding: 50px 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.grids .grid1 {
+  color: #fff;
+  background-color: #733FC8;
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.grids .grid1 .rasmcha {
+  position: absolute;
+  left: 380px;
+  top: 62px;
+  opacity: 0.5;
+  z-index: 0.5;
+  color: #FBEAFF;
+  width: 120px;
+  height: 108px;
+}
+
+.grids .grid1 .rasmcha img {
+  width: 100%;
+  height: 100%;
+}
+
+.grids .grid2 {
+  color: #fff;
+  background-color: #49556B;
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.grids .grid3 {
+  background-color: #fff;
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.grids .grid3 h3 {
+  color: #49556B;
+}
+
+.grids .grid3 p {
+  color: #989C9F;
+}
+
+.grids .grid4 {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: #fff;
+}
+
+.grids .grid4 h3 {
+  color: #49556B;
+}
+
+.grids .grid4 p {
+  color: #989C9F;
+}
+
+.grids .grid5 {
+  color: #fff;
+  grid-column: span 2;
+  grid-row: span 1;
+  background-color: #181F2C;
+}
+
+@media screen and (max-width: 768px) {
+  .grids {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  .grids .grid {
+    display: -ms-grid;
+    display: grid;
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .grids .grid1 {
+    display: -ms-grid;
+    display: grid;
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  .grids .grid1 .rasmcha {
+    display: none;
+  }
+  .grids .grid5 {
+    display: -ms-grid;
+    display: grid;
+    grid-column: span 1;
+    grid-row: span 2;
+    -webkit-box-ordinal-group: -2;
+        -ms-flex-order: -3;
+            order: -3;
+  }
+  .grids .grid3 {
+    display: -ms-grid;
+    display: grid;
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  .grids .grid2 {
+    display: -ms-grid;
+    display: grid;
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .grids .grid4 {
+    display: -ms-grid;
+    display: grid;
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .grids {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .grids .grid {
+    display: -ms-grid;
+    display: grid;
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .grids .grid1 .rasmcha {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
